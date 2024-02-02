@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./src/style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_Academia-de-Programação</title>
+</head>
+
+<body>
+
+    <!--   MEU CABEÇALHO  -->
+    <header>
+        <div class="containner-header">
+            <div class="header-navigation-content">
+                <div class="logo-image-content">
+                    <img src="./src/media/Logo.png" alt="LOGO-LR">
+                </div>
+                <nav class="inner-header-content">
+                    <li><a href="#HOME">Inicio</a></li>
+                    <li><a href="#ANY1">link1</a></li>
+                    <li><a href="#ANY2">link2</a></li>
+                    <li><a href="#ANY3">link3</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--   MEU CABEÇALHO  -->
+
+    <main>
+        <div class="containner-main">
+            <div class="layout-section">
+                <div class="containner-system">
+                    <div class="object-content">
+                        <div class="object-i">
+                            <div class="triangulo"></div>
+                        </div>
+                        <div class="object-i">
+                            <div class="isoceles"></div>
+                        </div>
+                        <div class="object-i">
+                            <div class="escaleno"></div>
+                        </div>
+                    </div>
+                    <div class="system-content">
+                        <div class="info-util">
+                            <h2 class="tittle">Programa</h2>
+                            <p class="info">Olá, este é o meu protótipo para o desafio da Academia de programação.
+                                Este programa funciona de maneira simples, cada uma das arestas <span>(X , Y , Z)</span> representa um lado do triangulo, e o botão envia em qual categoria ele se.</p>
+                        </div>
+                        <div class="input-section">
+                            <div class="options" id="form">
+                                <li>
+                                        <span>X</span>
+                                        <input type="number" min="0" max="18"  name="X" id="X" value="0">
+                                </li>
+                                <li>
+                                        <span>Y</span>
+                                        <input type="number" min="0" max="18"  name="Y" id="Y" value="0">
+                                </li>
+                                <li>
+                                        <span>Z</span>
+                                        <input type="number" min="0" max="18"   name="Z" id="Z" value="0">
+                                </li>
+                                <button onclick="salvar()">Enviar</button>
+                                <button onclick="check()">Checar</button>
+                            </div>
+                            <div class="preview-object">
+                                <div class="object-p"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--   MEU FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="contact-section">
+                <div class="email-content">
+                    <ion-icon name="letter">Email</ion-icon>
+                    <h3 class="contact-link">
+                        <a href="mailto:leokrodrigues@gmail.com">Leonardo R.</a><span>@gmail.com</span>
+                    </h3>
+                </div>
+                <div class="whatssap-content">
+                    <ion-icon name="whatsapp-logo">Whatsapp</ion-icon>
+                    <h3 class="contact-link"><a
+                            href="https://wa.me/send/?phone=5549998076236&text='Olá, estou entrando em contato, pelo link do seu portifólio.'&type=phone_number&app_absent=0"
+                            target="_blank">(49)
+                            9 9807-6236</a> Leonardo R.</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright-section">
+                <p>Copyright &copy; 2023 <a rel="reopensite" href="https://kriegerl1.github.io/Match-Repo/"><img
+                            src="../Match/assets/media/images/Logo.png" alt="">eonardo
+                        "Krieger" Rodrigues</a> -
+                    Desenvolvedor em formação.</p>
+                <div>
+                    <p>Siga-me
+                        <a href="http://www.linkedin.com/in/leokrodrigues" target="_blank"><ion-icon
+                                name="logo-linkedin"></ion-icon></a>
+                        <a href="https://github.com/Kriegerl1" target="_blank"><ion-icon
+                                name="logo-github"></ion-icon></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--   MEU FOOTER -->
+
+</body>
+<script src="./src/js/js.js"></script>
+
+</html>
