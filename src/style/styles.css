@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+    scroll-behavior: smooth;
     font-family: "Righteous";
+    text-decoration: none;
 
 }
 
@@ -15,7 +17,7 @@
     --set-color-word: wheat;
     --set-color-obj: purple;
     --set-triangle: polygon(0rem 0rem, 18rem 0rem, 18rem 0, 0 18rem);
-    --nivelador: 18rem
+    --nivelador: 18rem --centralizador: 18rem
 }
 
 /* clip-path: polygon(0 0, 18rem 0rem, 18rem 0, 0 18rem); equilátero */
@@ -27,14 +29,22 @@
 
 /* BARRA DE HEADER */
 header * {
-    font-size: 2rem;
     font-family: 'Righteous';
     color: var(--set-color-i-word);
 }
 
+#home {
+    position: absolute;
+    top: 0;
+}
+
 .containner-header {
     background-color: var(--set-web-color-p);
-    height: 10vh;
+    height: 7vh;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .containner-header .header-navigation-content {
@@ -44,13 +54,26 @@ header * {
     align-items: center;
     justify-content: space-between;
     margin-inline: 5%;
+    font-size: 7rem;
 }
 
 .containner-header .header-navigation-content .inner-header-content {
     display: flex;
-    width: 30%;
+    width: auto;
     justify-content: space-between;
     list-style: none;
+}
+
+.containner-header .header-navigation-content .inner-header-content a {
+    margin: 1rem;
+    padding: 0.7rem;
+    background-color: rgb(57, 57, 57);
+    border-radius: 3rem;
+}
+
+.containner-header .header-navigation-content .inner-header-content a:hover {
+    color: wheat;
+    transition: all .5s;
 }
 
 .containner-header .header-navigation-content img {
@@ -75,7 +98,6 @@ body {
 
 .containner-main .layout-section {
     width: auto;
-    height: auto;
     padding: 5rem;
     margin: 10% 5%;
     border: .2rem solid;
@@ -87,11 +109,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .object-content {
     margin: 2rem;
-    height: 20rem;
+    height: auto;
     width: 100%;
     background-image: var(--set-web-color-bg);
     display: flex;
@@ -99,7 +122,7 @@ body {
 
 }
 
-.object-i .triangulo:hover {
+.object-i:hover .triangulo {
     transform: translate(-1.5rem 1rem);
     scale: 1.2;
     transition: all .5s;
@@ -117,20 +140,38 @@ body {
     margin-top: 10rem;
 }
 
-.object-i .isoceles:hover {
+.object-i:hover .isoceles {
     scale: 1.2;
     transition: all .5s;
 }
+
 .object-i .isoceles {
+    transform: translateX(2.5rem) translateY(7rem);
     border: .3rem solid rgb(151, 52, 151);
     background-color: var(--set-color-obj);
     width: 15rem;
     height: 15rem;
-    clip-path: polygon(0rem 0rem, 15rem 0rem, 10rem 0,5rem 15rem);
+    clip-path: polygon(0rem 0rem, 15rem 0rem, 10rem 0, 5rem 15rem);
     transition: all .2s;
+    margin-top: 10rem;
+    rotate: 180deg;
 }
 
-.object-i .escaleno:hover {
+.object-i span {
+    position: relative;
+    justify-self: start;
+    top: -2rem;
+    color: wheat;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.object-i:hover span {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.object-i:hover .escaleno {
     transform: translate(-1rem 1rem);
     scale: 1.2;
     transition: all .5s;
@@ -139,28 +180,30 @@ body {
 .object-i .escaleno {
     border: .3rem solid rgb(151, 52, 151);
     background-color: var(--set-color-obj);
+    transform: translateY(2.5rem);
     width: 15rem;
     height: 15rem;
     clip-path: polygon(0 0, 10rem 0rem, 15rem 0, 0 10rem);
     transition: all .2s;
-    rotate: 45deg;
+    rotate: 35deg;
     margin-top: 10rem;
 }
 
-/* clip-path: polygon(0 0, 18rem 0rem, 18rem 0, 0 18rem); equilátero */
 
-/* clip-path: polygon(0 0, 12rem 0rem, 18rem 0, 0 12rem); escaleno */
-
-/* clip-path: polygon(0rem 0rem, 18rem 0rem, 12rem 0, 0 6rem); isoceles */
-
-
+.preview-object .object-p:hover {
+    transform: translate(-1rem 1rem);
+    scale: 1.2;
+    transition: all .5s;
+}
 .preview-object .object-p {
     height: var(--nivelador);
     width: var(--nivelador);
     background-color: var(--set-color-obj);
     border: .3rem solid rgb(143, 105, 143);
     clip-path: var(--set-triangle);
-    transform: var(--nivelador);
+    transform: translateX(calc(var(--centralizador)/3)) translateY(calc(var(--centralizador)/3));
+    transition: all 1s;
+
 }
 
 .object-content div {
@@ -171,7 +214,9 @@ body {
 .object-i {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+    padding: 3rem;
     width: 33%;
     margin: 2rem;
     background-image: var(--set-web-color-teater);
@@ -179,9 +224,9 @@ body {
 
 .system-content {
     display: flex;
-    height: 30rem;
+    height: auto;
     width: 100%;
-    padding: 2rem;
+    padding: 5rem;
     background-image: var(--set-web-color-bg);
     border: .1rem solid;
     border-image: var(--set-web-color-p);
@@ -191,18 +236,22 @@ body {
     width: 40%;
     margin: 1rem;
 }
-.info-util .tittle{
+
+.info-util .tittle {
     font-size: 4rem;
     color: var(--set-color-i-word);
 
 }
-.info{
+
+.info {
     font-size: 2.3rem;
 }
-.info span{
+
+.info span {
     font-size: 2.5rem;
     color: var(--set-color-i-word);
 }
+
 .input-section {
     width: 60%;
     font-size: 4rem;
@@ -222,6 +271,16 @@ body {
     border-image: var(--set-web-color-p);
 }
 
+.options {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: .1rem solid;
+    background-image: var(--set-web-color-teater);
+    border-image: var(--set-web-color-p);
+}
+
 .options span {
     font-size: 5rem;
     color: var(--set-color-i-word);
@@ -233,15 +292,47 @@ body {
     align-items: center;
 }
 
-.options input:focus {
+/* .options input:focus {
     display: none;
-}
+} */
 .options input {
     font-size: 2rem;
     height: 2.5rem;
     border-radius: .5rem;
     width: 12rem;
 }
+
+/* INPUT NUMBER --------------------------------------------------------------------------- */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"] {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--set-color-word);
+    background-image: linear-gradient(175deg, transparent 80%, rgb(255, 255, 255, .5) 90%);
+    border: none;
+    border-bottom: .2rem solid #ffffffce;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    transition: all 1s;
+    background-image: linear-gradient(175deg, transparent 50%, rgba(255, 255, 255, 0.775) 90%);
+}
+
+/* INPUT NUMBER --------------------------------------------------------------------------- */
 
 /* CORPO DO SITE --MAIN--  */
 /* -- BARRA DE FOOTER */
@@ -264,6 +355,7 @@ footer * {
     font-size: 1.8rem;
 }
 
+
 .footer hr {
     height: 60%;
 }
@@ -276,40 +368,48 @@ footer * {
 }
 
 .footer img {
-    height: 2rem;
-    margin-bottom: -.3rem;
+    height: 5rem;
+    margin: -1.5rem -1rem;
 }
 
 /* -- BARRA DE FOOTER */
+/*   ION-ICONS */
+ion-icon {
+    font-size: 3rem;
+}
 
+/*   ION-ICONS */
 @keyframes blob {
-    0%{
-    border-radius: 9rem 8rem 4rem 15rem;
-    box-shadow: inset -2rem 1rem 10rem rgb(250, 18, 107);
+    0% {
+        border-radius: 9rem 8rem 4rem 15rem;
+        box-shadow: inset -2rem 1rem 10rem rgb(250, 18, 107);
         transform: perspective(15deg);
-    
-    }
-    25%{
-    border-radius: 5rem 4rem 12rem 3rem;
-    box-shadow: inset 3rem 1rem 1rem rgb(255, 0, 221);
 
     }
-    50%{
-    border-radius: 8rem 12rem 7rem 6rem;
-    transform:rotate3d(200deg) ;
-    transform: perspective(-55deg);
+
+    25% {
+        border-radius: 5rem 4rem 12rem 3rem;
+        box-shadow: inset 3rem 1rem 1rem rgb(255, 0, 221);
 
     }
-    
-    75%{
-    box-shadow: inset -2rem 1rem 10rem rgb(255, 66, 176);
-    border-radius: 13rem 10rem 9rem 5rem;
+
+    50% {
+        border-radius: 8rem 12rem 7rem 6rem;
+        transform: rotate3d(200deg);
+        transform: perspective(-55deg);
 
     }
-    100%{
-    box-shadow: inset 1rem 5rem 1rem rgb(255, 0, 149);
-    border-radius: 3rem 7rem 5rem 2rem;
+
+    75% {
+        box-shadow: inset -2rem 1rem 10rem rgb(255, 66, 176);
+        border-radius: 13rem 10rem 9rem 5rem;
 
     }
-    
+
+    100% {
+        box-shadow: inset 1rem 5rem 1rem rgb(255, 0, 149);
+        border-radius: 3rem 7rem 5rem 2rem;
+
+    }
+
 }

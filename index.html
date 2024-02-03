@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <div id="home"></div>
     <!--   MEU CABEÇALHO  -->
     <header>
         <div class="containner-header">
@@ -19,10 +19,12 @@
                     <img src="./src/media/Logo.png" alt="LOGO-LR">
                 </div>
                 <nav class="inner-header-content">
-                    <li><a href="#HOME">Inicio</a></li>
-                    <li><a href="#ANY1">link1</a></li>
-                    <li><a href="#ANY2">link2</a></li>
-                    <li><a href="#ANY3">link3</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="https://www.instagram.com/leo_rodrigues1997/" target="_blank">Meu Insta</a></li>
+                    <li><a href="https://wa.me//5549998076236?text=Olá.&type=phone_number&app_absent=0"
+                            target="_blank">Meu Whatsapp</a></li>
+                    <li><a href="https://github.com/Kriegerl1/Chall1AcadProgram" target="_blank">Ropositório Git</a>
+                    </li>
                 </nav>
             </div>
         </div>
@@ -35,12 +37,15 @@
                 <div class="containner-system">
                     <div class="object-content">
                         <div class="object-i">
+                            <span>Triangulo Equilátero</span>
                             <div class="triangulo"></div>
                         </div>
                         <div class="object-i">
+                            <span>Triangulo Isóceles</span>
                             <div class="isoceles"></div>
                         </div>
                         <div class="object-i">
+                            <span>Triangulo Escaleno</span>
                             <div class="escaleno"></div>
                         </div>
                     </div>
@@ -48,21 +53,23 @@
                         <div class="info-util">
                             <h2 class="tittle">Programa</h2>
                             <p class="info">Olá, este é o meu protótipo para o desafio da Academia de programação.
-                                Este programa funciona de maneira simples, cada uma das arestas <span>(X , Y , Z)</span> representa um lado do triangulo, e o botão envia em qual categoria ele se.</p>
+                                Este programa funciona de maneira simples, cada uma das arestas <span>(X , Y , Z)</span>
+                                representa um lado do triangulo. Os botões fazem a alteração do triangulo e validam a
+                                categoria em que ele se encaixa.</p>
                         </div>
                         <div class="input-section">
-                            <div class="options" id="form">
+                            <div class="options">
                                 <li>
-                                        <span>X</span>
-                                        <input type="number" min="0" max="18"  name="X" id="X" value="0">
+                                    <span>X</span>
+                                    <input type="number" min="0" max="18" name="X" id="X" value="0">
                                 </li>
                                 <li>
-                                        <span>Y</span>
-                                        <input type="number" min="0" max="18"  name="Y" id="Y" value="0">
+                                    <span>Y</span>
+                                    <input type="number" min="0" max="18" name="Y" id="Y" value="0">
                                 </li>
                                 <li>
-                                        <span>Z</span>
-                                        <input type="number" min="0" max="18"   name="Z" id="Z" value="0">
+                                    <span>Z</span>
+                                    <input type="number" min="0" max="18" name="Z" id="Z" value="0">
                                 </li>
                                 <button onclick="salvar()">Enviar</button>
                                 <button onclick="check()">Checar</button>
@@ -82,15 +89,15 @@
         <div class="footer">
             <div class="contact-section">
                 <div class="email-content">
-                    <ion-icon name="letter">Email</ion-icon>
+                    <ion-icon name="mail-outline" style="color:rgb(255, 93, 93)"></ion-icon>Email
                     <h3 class="contact-link">
                         <a href="mailto:leokrodrigues@gmail.com">Leonardo R.</a><span>@gmail.com</span>
                     </h3>
                 </div>
                 <div class="whatssap-content">
-                    <ion-icon name="whatsapp-logo">Whatsapp</ion-icon>
+                    <ion-icon name="logo-whatsapp" style="color:rgb(37, 211, 102)"></ion-icon>Whatsapp
                     <h3 class="contact-link"><a
-                            href="https://wa.me/send/?phone=5549998076236&text='Olá, estou entrando em contato, pelo link do seu portifólio.'&type=phone_number&app_absent=0"
+                            href="https://wa.me/send/?phone=5549998076236&text='Olá, estou entrando em contato, pelo link do seu Footer.'&type=phone_number&app_absent=0"
                             target="_blank">(49)
                             9 9807-6236</a> Leonardo R.</h3>
                 </div>
@@ -98,7 +105,7 @@
             <hr>
             <div class="copyright-section">
                 <p>Copyright &copy; 2023 <a rel="reopensite" href="https://kriegerl1.github.io/Match-Repo/"><img
-                            src="../Match/assets/media/images/Logo.png" alt="">eonardo
+                            src="./src/media/Logo.png" alt="">eonardo
                         "Krieger" Rodrigues</a> -
                     Desenvolvedor em formação.</p>
                 <div>
@@ -116,5 +123,6 @@
 
 </body>
 <script src="./src/js/js.js"></script>
+<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
 </html>
