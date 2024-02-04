@@ -59,7 +59,7 @@
 
     - Triângulos com todos os lados e ângulos iguais, são definidos como Equiláteros.
     - Triângulos com dois lados e angulos iguais, são definidos como Esáceles.
-    - Triângulos com todos lados e ângulos diferentes, são definidos como Escalênos.
+    - Triângulos com todos lados e ângulos diferentes, são definidos como Escalenos.
     - Triângulos com um lado maior que a soma dos outros dois, são classificados como inválidos.
 -->
 <!------------------------------------------------------------------------------------------------- -->

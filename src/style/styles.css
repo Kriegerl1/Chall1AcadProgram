@@ -81,6 +81,14 @@ header * {
     margin-top: 5rem;
 }
 
+.logo-image-content{
+    transition: all .3s;
+}
+.logo-image-content:hover{
+    transform: translateY(-.5rem);
+    scale: 1.1;
+    transition: scale .5s  transform .1s;
+}
 /* BARRA DE HEADER */
 
 /* CORPO DO SITE --MAIN--  */
@@ -370,37 +378,3 @@ ion-icon {
 }
 
 /*   ION-ICONS */
-@keyframes blob {
-    0% {
-        border-radius: 9rem 8rem 4rem 15rem;
-        box-shadow: inset -2rem 1rem 10rem rgb(250, 18, 107);
-        transform: perspective(15deg);
-
-    }
-
-    25% {
-        border-radius: 5rem 4rem 12rem 3rem;
-        box-shadow: inset 3rem 1rem 1rem rgb(255, 0, 221);
-
-    }
-
-    50% {
-        border-radius: 8rem 12rem 7rem 6rem;
-        transform: rotate3d(200deg);
-        transform: perspective(-55deg);
-
-    }
-
-    75% {
-        box-shadow: inset -2rem 1rem 10rem rgb(255, 66, 176);
-        border-radius: 13rem 10rem 9rem 5rem;
-
-    }
-
-    100% {
-        box-shadow: inset 1rem 5rem 1rem rgb(255, 0, 149);
-        border-radius: 3rem 7rem 5rem 2rem;
-
-    }
-
-}
