@@ -1,65 +1,31 @@
-<!-- _______________________________ COM UM LAYOUT BÁSICO DE HTML E CSS _____________________________-->
+Sistema Simples de Identificação de Triângulos
 
-<!-- ______________________________________HEADER___________________________________________________ -->
+Este é um aplicativo simples que permite determinar o tipo de triângulo com base nos comprimentos dos seus lados fornecidos pelo usuário. Existem três tipos de triângulos que podem ser identificados:
 
-            <!-- LOGO -->
-            <!-- LOGO                          LINK1 __________LINK2 __________LINK3 __________LINK4 -->
-            <!-- LOGO -->
+    Equilátero: Triângulos com todos os lados e ângulos iguais.
+    Isósceles: Triângulos com dois lados e um ângulo iguais.
+    Escaleno: Triângulos com todos os lados e ângulos diferentes.
 
-<!-- ______________________________________HEADER___________________________________________________ -->
+Como Funciona
+Entrada de Dados
 
-<!-- ____________________________________ <-- MARGIN -->____________________________________________ -->
+O sistema solicita que o usuário forneça os três lados do triângulo. Números maiores que 20 ou menores que 0 não são permitidos. O usuário só pode inserir números inteiros.
+Identificação do Triângulo
 
-<!-- ______________________________________MAIN_____________________________________________________ -->
+Após receber os dados, o sistema verifica as seguintes condições:
 
+    Se todos os lados forem iguais, o triângulo é classificado como equilátero.
+    Se dois lados forem iguais, o triângulo é classificado como isósceles.
+    Se todos os lados forem diferentes, o triângulo é classificado como escaleno.
 
-<!-- DIV TRIANGULOS -->__<!-- ___  -->__<!-- DIV TRIANGULOS -->__<!--  ___ -->___<!-- DIV TRIANGULOS -->
-<!-- DIV TRIANGULOS -->__<!-- ___  -->__<!-- DIV TRIANGULOS -->__<!--  ___ -->___<!-- DIV TRIANGULOS -->
-<!-- DIV TRIANGULOS -->__<!-- ___  -->__<!-- DIV TRIANGULOS -->__<!--  ___ -->___<!-- DIV TRIANGULOS -->
-<!-- DIV TRIANGULOS -->__<!-- ___  -->__<!-- DIV TRIANGULOS -->__<!--  ___ -->___<!-- DIV TRIANGULOS -->
-<!-- DIV TRIANGULOS -->__<!-- ___  -->__<!-- DIV TRIANGULOS -->__<!--  ___ -->___<!-- DIV TRIANGULOS -->
-<!-- DIV TRIANGULOS -->__<!-- ___  -->__<!-- DIV TRIANGULOS -->__<!--  ___ -->___<!-- DIV TRIANGULOS -->
+Triângulos Inválidos
 
+Além disso, o sistema também verifica se os lados fornecidos formam um triângulo válido. Um triângulo é considerado inválido se um dos lados for maior que a soma dos outros dois.
+Saída de Resultados
 
-<!----------------------------------------<-- MARGIN------------------------------------------------ -->
+Depois de verificar todas as condições, o sistema emite um alerta com a definição do tipo de triângulo ou informa que os lados fornecidos não formam um triângulo válido.
+Utilização
 
-<!-----------------------------------------MAIN----------------------------------------------------- -->
+Para usar o sistema, basta inserir os três lados do triângulo quando solicitado e aguardar o alerta com o resultado.
 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-<!-- ----------------INFO-----------  --------CONTROEL----------- -----------------PREVIEW --------- --> 
-
-<!-----------------------------------------MAIN----------------------------------------------------- -->
-
-<!----------------------------------------<-- MARGIN------------------------------------------------ -->
-
-<!-- ______________________________________FOOTER___________________________________________________ -->
-<!-- _CONTATOS_DEV______________|___________________________________________________________________ -->
-<!-- _CONTATOS_DEV______________|___________________________________________________________________ -->
-<!-- _CONTATOS_DEV______________|___________COPYRIGHT_DO-DEV________________________________________ -->
-<!-- _CONTATOS_DEV______________|___________COPYRIGHT_DO-DEV________________________________________ -->
-<!-- _CONTATOS_DEV______________|___________________________________________________________________ -->
-<!-- ______________________________________FOOTER___________________________________________________ -->
-
-<!-------------------------------------------------------------------------------------------------- -->
-
-<!-- Documentação:
-
-    Sistema simples de trinagulos, temos 3 triângulos com definições diferente.
-    Dados os lados e checado o triângulo, emite um Alert() com sua definição. Os input não aceitam números
-    acima de 20 e abaixo de 0, também axistem algumas regras que foram pedidos nos requisitos:
-
-    - Triângulos com todos os lados e ângulos iguais, são definidos como Equiláteros.
-    - Triângulos com dois lados e angulos iguais, são definidos como Esáceles.
-    - Triângulos com todos lados e ângulos diferentes, são definidos como Escalenos.
-    - Triângulos com um lado maior que a soma dos outros dois, são classificados como inválidos.
--->
-<!------------------------------------------------------------------------------------------------- -->
+Este sistema foi desenvolvido para fornecer uma maneira rápida e fácil de identificar o tipo de triângulo com base nos lados fornecidos, seguindo as regras estabelecidas acima.
