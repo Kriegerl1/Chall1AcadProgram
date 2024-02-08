@@ -50,16 +50,3 @@
 <!-- ______________________________________FOOTER___________________________________________________ -->
 
 <!-------------------------------------------------------------------------------------------------- -->
-
-<!-- Documentação:
-
-    Sistema simples de trinagulos, temos 3 triângulos com definições diferente.
-    Dados os lados e checado o triângulo, emite um Alert() com sua definição. Os input não aceitam números
-    acima de 20 e abaixo de 0, também axistem algumas regras que foram pedidos nos requisitos:
-
-    - Triângulos com todos os lados e ângulos iguais, são definidos como Equiláteros.
-    - Triângulos com dois lados e angulos iguais, são definidos como Esáceles.
-    - Triângulos com todos lados e ângulos diferentes, são definidos como Escalenos.
-    - Triângulos com um lado maior que a soma dos outros dois, são classificados como inválidos.
--->
-<!------------------------------------------------------------------------------------------------- -->
