@@ -63,3 +63,21 @@ function check() {
         alert('Seu triângulo é isósceles');
     }
 }
+
+
+// Menu burguer
+let menuBurguer = document.querySelector('.r-menu-btn');
+
+menuBurguer.addEventListener('click', (event) => {
+    let target = document.querySelector('.inner-header-content');
+
+    if (target.classList.contains('hide')) {
+        target.classList.remove('hide');
+        document.querySelector('.r-menu-btn ion-icon').name = "return-down-forward-outline";
+    } else {
+        target.classList.add('hide');
+        document.querySelector('.r-menu-btn ion-icon').name = "menu-outline";
+    }
+});
+
+// Menu burguer
