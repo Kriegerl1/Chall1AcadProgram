@@ -6,7 +6,7 @@ Este é um aplicativo simples que permite determinar o tipo de triângulo com ba
     Isósceles: Triângulos com dois lados e um ângulo iguais.
     Escaleno: Triângulos com todos os lados e ângulos diferentes.
 
-Como Funciona
+Funcionamento
 Entrada de Dados
 
 O sistema solicita que o usuário forneça os três lados do triângulo. Números maiores que 20 ou menores que 0 não são permitidos. O usuário só pode inserir números inteiros.
