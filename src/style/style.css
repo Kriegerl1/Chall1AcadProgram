@@ -385,10 +385,7 @@ ion-icon {
 
 /*   ION-ICONS */
 
-.hide {
-    display: none;
-    opacity: 0;
-}
+
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
 
@@ -452,7 +449,8 @@ ion-icon {
     .containner-header .header-navigation-content .inner-header-content span {
         margin-inline: 5rem;
     }
-    .r-menu-btn{
+
+    .r-menu-btn {
         display: flex;
     }
 
@@ -497,4 +495,7 @@ ion-icon {
         font-size: 3rem;
     }
 
+    .inner-header-content.hide {
+        opacity: 0;
+    }
 }
